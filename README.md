@@ -26,4 +26,4 @@ This application allows you to make data analysis on the open vacancies in the p
   cd technologies
   scrapy crawl djinni -O vacancies.csv
    ```
-- Open Jupyter notebook analytics.ipynb and run
+- Use ```python analytics.py``` command to run analytics script
