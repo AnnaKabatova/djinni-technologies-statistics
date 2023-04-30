@@ -55,7 +55,7 @@ def parse_detail_vacancy(response: Response) -> None:
 class DjinniSpider(scrapy.Spider):
     name = "djinni"
     allowed_domains = ["djinni.co"]
-    start_urls = ["http://djinni.co/"]
+    start_urls = ["http://djinni.co/jobs/?primary_keyword=Python"]
 
     def parse(self, response: Response, **kwargs):
         page_urls = response.css("ul.list-jobs .order-1 a::attr(href)").getall()
